@@ -136,5 +136,85 @@ POST /api/agent/chat-log
   "message": "I met Dr. Sharma at Apollo Hospital. He was interested in CardioPlus and requested follow-up."
 }
 ```
+## How to Use the Application (User Workflow)
+
+This application is designed for **field representatives in life sciences** to log and manage interactions with Healthcare Professionals (HCPs).
+
+---
+
+### 1. Log Interaction using AI Chat
+
+- Navigate to **AI Chat Logger**
+- Enter interaction in natural language:
+
+  Example:
+  "I met Dr. Sharma at Apollo Hospital. He showed interest in CardioPlus and requested follow-up."
+
+- Click **"Log with AI"**
+
+System will:
+- Extract HCP name, hospital, and product
+- Detect sentiment (positive/neutral/negative)
+- Identify follow-up requirements
+- Generate summary
+- Save data into CRM automatically
+
+---
+
+### 2. Log Interaction using Structured Form
+
+- Navigate to **Structured Log Form**
+- Enter details manually:
+  - HCP Name
+  - Specialty
+  - Organization
+  - Interaction Type
+  - Notes, etc.
+
+- Click **"Save Interaction"**
+
+Used when precise manual entry is required
+
+---
+
+### 3. View Interactions
+
+- All logged interactions appear in the **Dashboard**
+- Each card shows:
+  - Doctor name
+  - Organization
+  - Summary
+  - Sentiment
+  - Follow-up status
+
+---
+
+### 4. Edit Interaction
+
+- Click **Edit** on any interaction
+- Update fields like:
+  - Notes
+  - Sentiment
+  - Follow-up date
+
+- Save changes
+
+---
+
+### 5. Delete Interaction
+
+- Click **Delete**
+- Confirm removal
+
+---
+
+### 6. AI Assistance (Business Value)
+
+The system helps:
+- Convert unstructured conversations into structured CRM data
+- Reduce manual data entry effort
+- Improve follow-up tracking
+- Provide actionable insights for sales representatives
+
 ## Author
 Kusam Bharath
