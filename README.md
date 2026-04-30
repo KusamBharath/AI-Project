@@ -64,7 +64,7 @@ The LangGraph agent acts as the decision-making layer that processes user input 
 ---
 
 ## Project Structure
-
+```
 ai-first-crm-hcp-module/
 ├── backend/
 │ ├── app/
@@ -85,7 +85,7 @@ ai-first-crm-hcp-module/
 │ │ ├── app/
 │ │ └── services/
 
-
+```
 ## Backend Setup
 cd backend
 python -m venv venv
