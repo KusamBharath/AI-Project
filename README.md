@@ -87,9 +87,6 @@ ai-first-crm-hcp-module/
 
 ```
 ## Backend Setup
-
-## ⚙️ Backend Setup
-
 ```bash
 cd backend
 python -m venv venv
