@@ -87,43 +87,54 @@ ai-first-crm-hcp-module/
 
 ```
 ## Backend Setup
+
+## ⚙️ Backend Setup
+
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
 ## Environment Variables
+```text
 DATABASE_URL=mysql+pymysql://root:password@localhost:3306/hcp_crm_db
 GROQ_API_KEY=your_api_key
 GROQ_MODEL=llama-3.3-70b-versatile
+```
 
 # API Endpoints
 
 ## Interaction APIs
+```text
 POST   /api/interactions
 GET    /api/interactions
 GET    /api/interactions/{id}
 PUT    /api/interactions/{id}
 DELETE /api/interactions/{id}
-
+```
 ## AI Agent APIs
+```
 POST /api/agent/ask
 POST /api/agent/chat-log
-
+```
 ## LangGraph Tool APIs
+```
 POST /api/agent/tools/log-interaction
 POST /api/agent/tools/edit-interaction
 POST /api/agent/tools/summarize-interaction
 POST /api/agent/tools/extract-entities
 POST /api/agent/tools/recommend-next-action
-
+```
 ## Example: AI Chat Log
+```
 POST /api/agent/chat-log
 
 {
   "message": "I met Dr. Sharma at Apollo Hospital. He was interested in CardioPlus and requested follow-up."
 }
-
+```
 ## Author
 Kusam Bharath
